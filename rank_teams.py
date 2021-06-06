@@ -7,8 +7,11 @@ def seed_mps(seed_results):
             sorted_team_to_scores[i]['mp'] = 0
         elif sorted_team_to_scores[i]['score'] == sorted_team_to_scores[i - 1]['score'] and sorted_team_to_scores[i]['turns'] == sorted_team_to_scores[i - 1]['turns']:
             # tie
-            sorted_team_to_scores[i - 1]['mp'] = sorted_team_to_scores[i - 1]['mp'] + 1
-            sorted_team_to_scores[i]['mp'] = sorted_team_to_scores[i - 1]['mp']
+            j = i - 1
+            sorted_team_to_scores[i]['mp'] = sorted_team_to_scores[j]['mp'] + 1
+            while(sorted_team_to_scores[i]['score'] == sorted_team_to_scores[j]['score'] and sorted_team_to_scores[i]['turns'] == sorted_team_to_scores[j]['turns']):
+                sorted_team_to_scores[j]['mp'] = sorted_team_to_scores[j]['mp'] + 1
+                j -= 1
         else:
             sorted_team_to_scores[i]['mp'] = sorted_team_to_scores[i - 1]['mp'] + 2
     return sorted_team_to_scores
