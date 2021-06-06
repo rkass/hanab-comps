@@ -3,6 +3,11 @@ from rank_teams import mps, pretty_print
 seed_scores = {
     '1': [
         {
+            'team': 'hakha3,padi,scharkbite',
+            'turns': 32,
+            'score': 13
+        },
+        {
             'team': 'kimbifille,Valetta6789,micerang',
             'turns': 58,
             'score': 25
@@ -35,6 +40,11 @@ seed_scores = {
     ],
     '2': [
         {
+            'team': 'hakha3,padi,scharkbite',
+            'turns': 48,
+            'score': 20
+        },
+        {
             'team': 'kimbifille,Valetta6789,micerang',
             'turns': 54,
             'score': 25
@@ -65,7 +75,12 @@ seed_scores = {
             'score': None
         }
     ],
-    '3': [        
+    '3': [       
+        {
+            'team': 'hakha3,padi,scharkbite',
+            'turns': 53,
+            'score': 25
+        },
         {
             'team': 'kimbifille,Valetta6789,micerang',
             'turns': 58,
@@ -99,14 +114,19 @@ seed_scores = {
     ],
     '4': [
         {
+            'team': 'hakha3,padi,scharkbite',
+            'turns': 55,
+            'score': 24
+        },
+        {
             'team': 'florrat2,sjrdrodge,libster',
             'turns': None,
             'score': None
         },
         {
             'team': 'dobi,wump,rz',
-            'turns': None,
-            'score': None
+            'turns': 53,
+            'score': 23
         },
         {
             'team': 'kimbifille,Valetta6789,micerang',
