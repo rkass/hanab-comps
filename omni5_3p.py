@@ -88,8 +88,8 @@ seed_scores = {
         },    
         {
             'team': 'florrat2,sjrdrodge,libster',
-            'turns': None,
-            'score': None
+            'turns': 52,
+            'score': 25
         },
         {
             'team': 'dobi,wump,rz',
